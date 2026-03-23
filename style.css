@@ -1290,6 +1290,7 @@ body {
     transform: translateX(100%);
     transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
     z-index: 999;
+    height: 100vh;
   }
   .nav__menu.open { transform: translateX(0); }
   .nav__link {
