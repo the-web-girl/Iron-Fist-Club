@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Groupes & Horaires | Iron Fist Boxing Club Lyon</title>
+  <meta name="description" content="Consultez les horaires des cours de boxe à Iron Fist Lyon : débutants, intermédiaires, confirmés, enfants. Boxe anglaise, kickboxing, self-défense.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header" role="banner">
+    <nav class="nav" role="navigation" aria-label="Navigation principale">
+      <a href="index.html" class="nav__logo" aria-label="Iron Fist Boxing Club - Accueil">
+        <span class="logo-icon" aria-hidden="true">✦</span>
+        <span class="logo-text">IRON <strong>FIST</strong></span>
+      </a>
+      <button class="nav__burger" id="burgerBtn" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__menu" id="navMenu" role="list">
+        <li><a href="index.html" class="nav__link">Accueil</a></li>
+        <li><a href="club.html" class="nav__link">Le Club</a></li>
+        <li><a href="coachs.html" class="nav__link">Coachs</a></li>
+        <li><a href="horaires.html" class="nav__link active" aria-current="page">Horaires</a></li>
+        <li><a href="tarifs.html" class="nav__link">Tarifs</a></li>
+        <li><a href="inscription.html" class="nav__link">Inscription</a></li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
+        <li><a href="inscription.html" class="nav__cta">Essai Gratuit</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <section class="page-hero" aria-label="En-tête page Horaires">
+      <div class="page-hero__bg" aria-hidden="true"></div>
+      <div class="container">
+        <div class="page-hero__content">
+          <div class="section-tag reveal">Planning</div>
+          <h1 class="page-hero__title reveal">Horaires & Groupes</h1>
+          <p class="page-hero__sub reveal">32 cours par semaine, pour tous les niveaux.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="schedule-title">
+      <div class="container">
+
+        <!-- FILTRES -->
+        <div class="filters reveal" role="group" aria-label="Filtrer les cours">
+          <p class="filters__label">Filtrer par :</p>
+          <div class="filters__row">
+            <button class="filter-btn active" data-filter="all">Tous les cours</button>
+            <button class="filter-btn" data-filter="debutants">Débutants</button>
+            <button class="filter-btn" data-filter="intermediaires">Intermédiaires</button>
+            <button class="filter-btn" data-filter="confirmes">Confirmés</button>
+            <button class="filter-btn" data-filter="enfants">Enfants</button>
+          </div>
+          <div class="filters__row">
+            <button class="filter-btn" data-filter="boxe">Boxe Anglaise</button>
+            <button class="filter-btn" data-filter="kickboxing">Kickboxing</button>
+            <button class="filter-btn" data-filter="self-defense">Self-Défense</button>
+            <button class="filter-btn" data-filter="fitness">Fitness Boxe</button>
+          </div>
+        </div>
+
+        <!-- LÉGENDE -->
+        <div class="schedule-legend reveal" aria-label="Légende">
+          <div class="legend-item"><span class="legend-dot legend-dot--popular"></span>Cours populaire</div>
+          <div class="legend-item"><span class="legend-dot legend-dot--new"></span>Nouveau créneau</div>
+          <div class="legend-item"><span class="legend-dot legend-dot--full"></span>Presque complet</div>
+        </div>
+
+        <h2 id="schedule-title" class="sr-only">Tableau des horaires</h2>
+
+        <!-- TABLEAU HORAIRES -->
+        <div class="schedule-table-wrap reveal" role="region" aria-label="Tableau des horaires" tabindex="0">
+          <table class="schedule-table" aria-describedby="schedule-title">
+            <caption class="sr-only">Horaires des cours Iron Fist Boxing Club</caption>
+            <thead>
+              <tr>
+                <th scope="col">Horaire</th>
+                <th scope="col">Lundi</th>
+                <th scope="col">Mardi</th>
+                <th scope="col">Mercredi</th>
+                <th scope="col">Jeudi</th>
+                <th scope="col">Vendredi</th>
+                <th scope="col">Samedi</th>
+                <th scope="col">Dimanche</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="time-cell">08h00 – 09h00</td>
+                <td><div class="slot slot--fitness" data-tags="fitness debutants">🏋️ Fitness Boxe<span class="slot__level">Débutants</span></div></td>
+                <td></td>
+                <td></td>
+                <td><div class="slot slot--fitness" data-tags="fitness debutants">🏋️ Fitness Boxe<span class="slot__level">Débutants</span></div></td>
+                <td></td>
+                <td><div class="slot slot--boxe slot--popular" data-tags="boxe intermediaires">🥊 Boxe Anglaise<span class="slot__level">Intermédiaires</span><span class="slot__badge popular">Populaire</span></div></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="time-cell">10h00 – 11h00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><div class="slot slot--boxe" data-tags="boxe debutants">🥊 Boxe Anglaise<span class="slot__level">Débutants</span></div></td>
+                <td><div class="slot slot--fitness" data-tags="fitness debutants">🏋️ Fitness Boxe<span class="slot__level">Tous niveaux</span></div></td>
+              </tr>
+              <tr>
+                <td class="time-cell">12h00 – 13h00</td>
+                <td><div class="slot slot--boxe" data-tags="boxe intermediaires">🥊 Boxe Anglaise<span class="slot__level">Intermédiaires</span></div></td>
+                <td></td>
+                <td><div class="slot slot--kick" data-tags="kickboxing intermediaires">🦵 Kickboxing<span class="slot__level">Intermédiaires</span></div></td>
+                <td></td>
+                <td><div class="slot slot--boxe" data-tags="boxe intermediaires">🥊 Boxe Anglaise<span class="slot__level">Intermédiaires</span></div></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="time-cell">16h00 – 17h00</td>
+                <td></td>
+                <td><div class="slot slot--enfants slot--popular" data-tags="boxe enfants">🥊 Boxe Enfants<span class="slot__level">6–10 ans</span><span class="slot__badge popular">Populaire</span></div></td>
+                <td><div class="slot slot--enfants" data-tags="boxe enfants">🥊 Boxe Enfants<span class="slot__level">10–14 ans</span></div></td>
+                <td><div class="slot slot--enfants slot--popular" data-tags="boxe enfants">🥊 Boxe Enfants<span class="slot__level">6–10 ans</span><span class="slot__badge popular">Populaire</span></div></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="time-cell">17h30 – 18h30</td>
+                <td></td>
+                <td><div class="slot slot--enfants" data-tags="boxe enfants">🥊 Boxe Enfants<span class="slot__level">10–14 ans</span></div></td>
+                <td><div class="slot slot--boxe" data-tags="boxe debutants">🥊 Boxe Débutants<span class="slot__level">Adultes</span></div></td>
+                <td><div class="slot slot--enfants" data-tags="boxe enfants">🥊 Boxe Enfants<span class="slot__level">10–14 ans</span></div></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="time-cell">18h30 – 20h00</td>
+                <td><div class="slot slot--boxe slot--popular" data-tags="boxe confirmes">🥊 Boxe Anglaise<span class="slot__level">Confirmés</span><span class="slot__badge popular">Populaire</span></div></td>
+                <td><div class="slot slot--kick slot--popular" data-tags="kickboxing confirmes">🦵 Kickboxing<span class="slot__level">Confirmés</span><span class="slot__badge popular">Populaire</span></div></td>
+                <td><div class="slot slot--boxe slot--new" data-tags="boxe debutants">🥊 Boxe Féminine<span class="slot__level">Tous niveaux</span><span class="slot__badge new">Nouveau</span></div></td>
+                <td><div class="slot slot--kick" data-tags="kickboxing debutants">🦵 Kickboxing<span class="slot__level">Débutants</span></div></td>
+                <td><div class="slot slot--boxe" data-tags="boxe confirmes">🥊 Boxe Anglaise<span class="slot__level">Confirmés</span></div></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="time-cell">19h00 – 20h00</td>
+                <td><div class="slot slot--self" data-tags="self-defense intermediaires">🛡️ Self-Défense<span class="slot__level">Intermédiaires</span></div></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><div class="slot slot--self slot--full" data-tags="self-defense debutants">🛡️ Self-Défense<span class="slot__level">Débutants</span><span class="slot__badge full">Presque complet</span></div></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="time-cell">20h00 – 21h30</td>
+                <td></td>
+                <td><div class="slot slot--boxe" data-tags="boxe intermediaires">🥊 Boxe Anglaise<span class="slot__level">Intermédiaires</span></div></td>
+                <td><div class="slot slot--kick" data-tags="kickboxing confirmes">🦵 Kickboxing<span class="slot__level">Confirmés</span></div></td>
+                <td><div class="slot slot--boxe slot--popular" data-tags="boxe intermediaires">🥊 Boxe Anglaise<span class="slot__level">Intermédiaires</span><span class="slot__badge popular">Populaire</span></div></td>
+                <td><div class="slot slot--kick" data-tags="kickboxing debutants">🦵 Kickboxing<span class="slot__level">Débutants</span></div></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- GROUPES DESCRIPTIONS -->
+        <div class="groups section" aria-labelledby="groups-title">
+          <div class="section-header reveal">
+            <div class="section-tag">Groupes</div>
+            <h2 id="groups-title" class="section-title">À quel groupe<br><em>appartenez-vous ?</em></h2>
+          </div>
+          <div class="groups__grid">
+            <div class="group-card reveal" data-tag="debutants">
+              <div class="group-card__badge">Groupe 1</div>
+              <h3>Débutants</h3>
+              <p><strong>Aucune expérience requise.</strong> Vous apprendrez les bases : garde, déplacements, jabs, directs. Rythme progressif, encadrement personnalisé.</p>
+              <p class="group-card__age">Adultes · Dès 16 ans</p>
+            </div>
+            <div class="group-card reveal" data-tag="intermediaires">
+              <div class="group-card__badge">Groupe 2</div>
+              <h3>Intermédiaires</h3>
+              <p><strong>3 à 18 mois de pratique.</strong> Technique affinée, combinaisons, travail au sac et au pad. Premier contact avec le sparring light.</p>
+              <p class="group-card__age">Adultes · Dès 16 ans</p>
+            </div>
+            <div class="group-card reveal group-card--featured" data-tag="confirmes">
+              <div class="group-card__badge">Groupe 3</div>
+              <h3>Confirmés</h3>
+              <p><strong>+18 mois de pratique.</strong> Sparring régulier, préparation compétition possible, techniques avancées. Exigence maximale.</p>
+              <p class="group-card__age">Adultes · Dès 16 ans</p>
+            </div>
+            <div class="group-card reveal" data-tag="enfants">
+              <div class="group-card__badge">Jeunesse</div>
+              <h3>Enfants & Ados</h3>
+              <p><strong>Initiation ludique et éducative.</strong> Pas de sparring. Jeux sportifs, coordination, respect, confiance en soi. Deux tranches d'âge.</p>
+              <p class="group-card__age">6 – 10 ans | 10 – 14 ans</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="cta-band section section--dark" aria-labelledby="cta-schedule">
+      <div class="container">
+        <div class="cta-band__content reveal">
+          <h2 id="cta-schedule">Trouvé votre créneau ?</h2>
+          <p>Inscrivez-vous ou réservez votre séance d'essai gratuite dès aujourd'hui.</p>
+          <div class="cta-band__actions">
+            <a href="inscription.html" class="btn btn--primary btn--large">S'inscrire maintenant</a>
+            <a href="tarifs.html" class="btn btn--ghost">Voir les tarifs</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand"><a href="index.html" class="nav__logo"><span class="logo-icon" aria-hidden="true">✦</span><span class="logo-text">IRON <strong>FIST</strong></span></a><p>Club de boxe à Lyon depuis 2008.</p><div class="footer__social"><a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a><a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a></div></div>
+        <nav class="footer__nav" aria-label="Navigation secondaire"><h3>Navigation</h3><ul role="list"><li><a href="index.html">Accueil</a></li><li><a href="club.html">Le Club</a></li><li><a href="coachs.html">Coachs</a></li><li><a href="horaires.html">Horaires</a></li><li><a href="tarifs.html">Tarifs</a></li><li><a href="inscription.html">Inscription</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+        <div class="footer__contact"><h3>Contact</h3><address><p>📍 12 Rue de la Boxe, 69003 Lyon</p><p>📞 <a href="tel:+33472000000">04 72 00 00 00</a></p></address></div>
+        <div class="footer__legal"><h3>Informations</h3><ul role="list"><li><a href="mentions-legales.html">Mentions légales</a></li><li><a href="confidentialite.html">Politique de confidentialité</a></li></ul></div>
+      </div>
+      <div class="footer__bottom"><p>&copy; 2024 Iron Fist Boxing Club – Tous droits réservés</p></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

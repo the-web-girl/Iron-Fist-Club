@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Iron Fist Boxing Club Lyon</title>
+  <meta name="description" content="Contactez Iron Fist Boxing Club à Lyon. Adresse, téléphone, email, formulaire de contact. 12 Rue de la Boxe, 69003 Lyon.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header" role="banner">
+    <nav class="nav" role="navigation" aria-label="Navigation principale">
+      <a href="index.html" class="nav__logo" aria-label="Iron Fist Boxing Club - Accueil">
+        <span class="logo-icon" aria-hidden="true">✦</span>
+        <span class="logo-text">IRON <strong>FIST</strong></span>
+      </a>
+      <button class="nav__burger" id="burgerBtn" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__menu" id="navMenu" role="list">
+        <li><a href="index.html" class="nav__link">Accueil</a></li>
+        <li><a href="club.html" class="nav__link">Le Club</a></li>
+        <li><a href="coachs.html" class="nav__link">Coachs</a></li>
+        <li><a href="horaires.html" class="nav__link">Horaires</a></li>
+        <li><a href="tarifs.html" class="nav__link">Tarifs</a></li>
+        <li><a href="inscription.html" class="nav__link">Inscription</a></li>
+        <li><a href="contact.html" class="nav__link active" aria-current="page">Contact</a></li>
+        <li><a href="inscription.html" class="nav__cta">Essai Gratuit</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <section class="page-hero" aria-label="En-tête page Contact">
+      <div class="page-hero__bg" aria-hidden="true"></div>
+      <div class="container">
+        <div class="page-hero__content">
+          <div class="section-tag reveal">Parlons-nous</div>
+          <h1 class="page-hero__title reveal">Contact</h1>
+          <p class="page-hero__sub reveal">Une question ? On répond sous 24h.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact-layout">
+
+          <!-- INFOS -->
+          <div class="contact-info reveal">
+            <h2 id="contact-title" class="section-title--sm">Retrouvez-nous</h2>
+
+            <div class="contact-info__items">
+              <div class="contact-info__item">
+                <span class="contact-info__icon" aria-hidden="true">📍</span>
+                <div>
+                  <strong>Adresse</strong>
+                  <address>12 Rue de la Boxe<br>69003 Lyon, France</address>
+                  <a href="https://maps.google.com/?q=Lyon+France" target="_blank" rel="noopener" class="contact-info__link">Voir sur Google Maps →</a>
+                </div>
+              </div>
+              <div class="contact-info__item">
+                <span class="contact-info__icon" aria-hidden="true">📞</span>
+                <div>
+                  <strong>Téléphone</strong>
+                  <p><a href="tel:+33472000000">04 72 00 00 00</a></p>
+                </div>
+              </div>
+              <div class="contact-info__item">
+                <span class="contact-info__icon" aria-hidden="true">✉️</span>
+                <div>
+                  <strong>Email</strong>
+                  <p><a href="mailto:contact@ironfist-boxing.fr">contact@ironfist-boxing.fr</a></p>
+                </div>
+              </div>
+              <div class="contact-info__item">
+                <span class="contact-info__icon" aria-hidden="true">🕐</span>
+                <div>
+                  <strong>Horaires d'accueil</strong>
+                  <p>Lun – Ven : 8h – 22h<br>Samedi : 9h – 19h<br>Dimanche : 10h – 13h</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-info__social">
+              <strong>Suivez-nous</strong>
+              <div class="social-links-large">
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-link-large" aria-label="Page Facebook Iron Fist Boxing">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                  Facebook
+                </a>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link-large" aria-label="Compte Instagram Iron Fist Boxing">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                  Instagram
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- FORMULAIRE -->
+          <div class="contact-form-wrap reveal">
+            <h2 class="section-title--sm">Envoyez-nous<br><em>un message</em></h2>
+            <form class="contact-form" id="contactForm" novalidate aria-label="Formulaire de contact">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-nom">Nom complet <span aria-hidden="true">*</span><span class="sr-only">(obligatoire)</span></label>
+                  <input type="text" id="contact-nom" name="nom" required autocomplete="name" placeholder="Votre nom" aria-required="true">
+                  <span class="form-error" role="alert" aria-live="polite"></span>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-email">Email <span aria-hidden="true">*</span><span class="sr-only">(obligatoire)</span></label>
+                  <input type="email" id="contact-email" name="email" required autocomplete="email" placeholder="votre@email.fr" aria-required="true">
+                  <span class="form-error" role="alert" aria-live="polite"></span>
+                </div>
+                <div class="form-group">
+                  <label for="contact-tel">Téléphone</label>
+                  <input type="tel" id="contact-tel" name="telephone" autocomplete="tel" placeholder="06 XX XX XX XX">
+                  <span class="form-error" role="alert" aria-live="polite"></span>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="contact-sujet">Sujet <span aria-hidden="true">*</span><span class="sr-only">(obligatoire)</span></label>
+                <select id="contact-sujet" name="sujet" required aria-required="true">
+                  <option value="">Sélectionner un sujet...</option>
+                  <option value="essai">Réserver un essai gratuit</option>
+                  <option value="inscription">Modalités d'inscription</option>
+                  <option value="tarifs">Renseignements tarifs</option>
+                  <option value="horaires">Renseignements horaires</option>
+                  <option value="autre">Autre</option>
+                </select>
+                <span class="form-error" role="alert" aria-live="polite"></span>
+              </div>
+              <div class="form-group">
+                <label for="contact-message">Message <span aria-hidden="true">*</span><span class="sr-only">(obligatoire)</span></label>
+                <textarea id="contact-message" name="message" rows="5" required placeholder="Votre message..." aria-required="true"></textarea>
+                <span class="form-error" role="alert" aria-live="polite"></span>
+              </div>
+              <div class="form-group form-group--checkbox">
+                <input type="checkbox" id="contact-rgpd" name="rgpd" required aria-required="true">
+                <label for="contact-rgpd">J'accepte que mes données soient traitées pour répondre à ma demande. <a href="confidentialite.html">Politique de confidentialité</a> <span aria-hidden="true">*</span></label>
+                <span class="form-error" role="alert" aria-live="polite"></span>
+              </div>
+              <button type="submit" class="btn btn--primary btn--large">Envoyer le message</button>
+              <div class="form-success" id="contactSuccess" hidden role="alert" aria-live="polite">
+                ✅ <strong>Message envoyé !</strong> Nous vous répondrons dans les 24 heures ouvrées.
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CARTE -->
+    <section class="map-section" aria-label="Carte de localisation">
+      <div class="map-placeholder" role="img" aria-label="Carte de localisation : 12 Rue de la Boxe, 69003 Lyon">
+        <div class="map-placeholder__content">
+          <span class="map-pin" aria-hidden="true">📍</span>
+          <strong>Iron Fist Boxing Club</strong>
+          <p>12 Rue de la Boxe, 69003 Lyon</p>
+          <a href="https://maps.google.com/?q=12+Rue+de+la+Boxe+69003+Lyon" target="_blank" rel="noopener noreferrer" class="btn btn--primary">Ouvrir dans Google Maps</a>
+          <p class="map-note">Métro D – Station Saxe-Gambetta · Parking disponible · Accès PMR</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand"><a href="index.html" class="nav__logo"><span class="logo-icon" aria-hidden="true">✦</span><span class="logo-text">IRON <strong>FIST</strong></span></a><p>Club de boxe à Lyon depuis 2008.</p><div class="footer__social"><a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a><a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a></div></div>
+        <nav class="footer__nav" aria-label="Navigation secondaire"><h3>Navigation</h3><ul role="list"><li><a href="index.html">Accueil</a></li><li><a href="club.html">Le Club</a></li><li><a href="coachs.html">Coachs</a></li><li><a href="horaires.html">Horaires</a></li><li><a href="tarifs.html">Tarifs</a></li><li><a href="inscription.html">Inscription</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+        <div class="footer__contact"><h3>Contact</h3><address><p>📍 12 Rue de la Boxe, 69003 Lyon</p><p>📞 <a href="tel:+33472000000">04 72 00 00 00</a></p><p>✉️ <a href="mailto:contact@ironfist-boxing.fr">contact@ironfist-boxing.fr</a></p></address></div>
+        <div class="footer__legal"><h3>Informations</h3><ul role="list"><li><a href="mentions-legales.html">Mentions légales</a></li><li><a href="confidentialite.html">Politique de confidentialité</a></li></ul></div>
+      </div>
+      <div class="footer__bottom"><p>&copy; 2024 Iron Fist Boxing Club – Tous droits réservés</p></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

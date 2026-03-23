@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarifs | Iron Fist Boxing Club Lyon</title>
+  <meta name="description" content="Découvrez les tarifs d'Iron Fist Boxing Club Lyon : abonnement mensuel, annuel, séance unique. Cours de boxe accessibles pour tous.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header" role="banner">
+    <nav class="nav" role="navigation" aria-label="Navigation principale">
+      <a href="index.html" class="nav__logo" aria-label="Iron Fist Boxing Club - Accueil">
+        <span class="logo-icon" aria-hidden="true">✦</span>
+        <span class="logo-text">IRON <strong>FIST</strong></span>
+      </a>
+      <button class="nav__burger" id="burgerBtn" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__menu" id="navMenu" role="list">
+        <li><a href="index.html" class="nav__link">Accueil</a></li>
+        <li><a href="club.html" class="nav__link">Le Club</a></li>
+        <li><a href="coachs.html" class="nav__link">Coachs</a></li>
+        <li><a href="horaires.html" class="nav__link">Horaires</a></li>
+        <li><a href="tarifs.html" class="nav__link active" aria-current="page">Tarifs</a></li>
+        <li><a href="inscription.html" class="nav__link">Inscription</a></li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
+        <li><a href="inscription.html" class="nav__cta">Essai Gratuit</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <section class="page-hero" aria-label="En-tête page Tarifs">
+      <div class="page-hero__bg" aria-hidden="true"></div>
+      <div class="container">
+        <div class="page-hero__content">
+          <div class="section-tag reveal">Nos offres</div>
+          <h1 class="page-hero__title reveal">Tarifs</h1>
+          <p class="page-hero__sub reveal">Des formules adaptées à chaque budget. Séance d'essai offerte.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pricing-section" aria-labelledby="pricing-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-tag">Formules</div>
+          <h2 id="pricing-title" class="section-title">Choisissez<br><em>votre formule</em></h2>
+          <p class="section-desc">Tous nos abonnements incluent l'accès à l'ensemble des cours selon votre groupe. Pas de frais cachés.</p>
+        </div>
+
+        <div class="pricing__grid">
+
+          <!-- Séance unique -->
+          <div class="price-card reveal">
+            <div class="price-card__header">
+              <div class="price-card__tag">Découverte</div>
+              <h3>Séance Unique</h3>
+              <div class="price-card__price">
+                <span class="price">15<sup>€</sup></span>
+                <span class="price-unit">/ séance</span>
+              </div>
+            </div>
+            <ul class="price-card__features" role="list">
+              <li>✓ Accès à 1 cours au choix</li>
+              <li>✓ Gants de prêt inclus</li>
+              <li>✓ Accueil personnalisé</li>
+              <li>✗ Accès libre à la salle</li>
+              <li>✗ Suivi individuel</li>
+            </ul>
+            <a href="inscription.html" class="btn btn--outline w-full">Réserver</a>
+          </div>
+
+          <!-- Mensuel -->
+          <div class="price-card price-card--featured reveal">
+            <div class="price-card__badge">Le plus populaire</div>
+            <div class="price-card__header">
+              <div class="price-card__tag">Flexibilité</div>
+              <h3>Abonnement Mensuel</h3>
+              <div class="price-card__price">
+                <span class="price">55<sup>€</sup></span>
+                <span class="price-unit">/ mois</span>
+              </div>
+            </div>
+            <ul class="price-card__features" role="list">
+              <li>✓ Cours illimités</li>
+              <li>✓ Accès à toutes les disciplines</li>
+              <li>✓ Accès libre à la salle</li>
+              <li>✓ Suivi de progression</li>
+              <li>✓ Bilan mensuel avec le coach</li>
+              <li>✓ Sans engagement</li>
+            </ul>
+            <a href="inscription.html" class="btn btn--primary w-full">S'inscrire</a>
+          </div>
+
+          <!-- Annuel -->
+          <div class="price-card reveal">
+            <div class="price-card__header">
+              <div class="price-card__tag">Économique</div>
+              <h3>Abonnement Annuel</h3>
+              <div class="price-card__price">
+                <span class="price">480<sup>€</sup></span>
+                <span class="price-unit">/ an</span>
+              </div>
+              <p class="price-saving">Économisez 180€ vs mensuel</p>
+            </div>
+            <ul class="price-card__features" role="list">
+              <li>✓ Cours illimités</li>
+              <li>✓ Accès à toutes les disciplines</li>
+              <li>✓ Accès libre à la salle</li>
+              <li>✓ Suivi personnalisé</li>
+              <li>✓ Séances individuelles (x2/an)</li>
+              <li>✓ T-shirt Iron Fist offert</li>
+              <li>✓ Priorité aux compétitions</li>
+            </ul>
+            <a href="inscription.html" class="btn btn--outline w-full">S'inscrire</a>
+          </div>
+
+        </div>
+
+        <!-- TARIFS SPÉCIAUX -->
+        <div class="special-prices reveal" aria-labelledby="special-title">
+          <h3 id="special-title" class="section-title--sm">Tarifs spéciaux</h3>
+          <div class="special-prices__grid">
+            <div class="special-card">
+              <span class="special-card__emoji" aria-hidden="true">👶</span>
+              <h4>Enfants (6–14 ans)</h4>
+              <p class="special-card__price">40€ / mois · 380€ / an</p>
+              <p>Cours dédiés, 2 créneaux par semaine maximum.</p>
+            </div>
+            <div class="special-card">
+              <span class="special-card__emoji" aria-hidden="true">👨‍👩‍👦</span>
+              <h4>Tarif Famille</h4>
+              <p class="special-card__price">-20% sur le 2e abonnement</p>
+              <p>Pour les membres d'une même famille domiciliée.</p>
+            </div>
+            <div class="special-card">
+              <span class="special-card__emoji" aria-hidden="true">🎓</span>
+              <h4>Étudiants</h4>
+              <p class="special-card__price">45€ / mois sur présentation</p>
+              <p>Carte étudiante valide exigée à l'inscription.</p>
+            </div>
+            <div class="special-card">
+              <span class="special-card__emoji" aria-hidden="true">🤝</span>
+              <h4>Pass 10 séances</h4>
+              <p class="special-card__price">120€ (soit 12€ / séance)</p>
+              <p>Valable 3 mois. Idéal pour une pratique irrégulière.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- NOTE FRAIS D'INSCRIPTION -->
+        <div class="pricing-note reveal" role="note" aria-label="Informations complémentaires">
+          <h3>📋 Informations importantes</h3>
+          <ul>
+            <li><strong>Frais d'inscription :</strong> 30€ / an (licence Fédération Française de Boxe incluse)</li>
+            <li><strong>Première séance :</strong> Entièrement gratuite et sans engagement</li>
+            <li><strong>Paiement :</strong> CB, espèces, virement, chèque Vacances, Pass Sport acceptés</li>
+            <li><strong>Résiliation :</strong> Abonnement mensuel résiliable à tout moment avec préavis de 30 jours</li>
+            <li><strong>Suspension :</strong> Possible sur justificatif médical (sans frais)</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="cta-band section section--dark" aria-labelledby="cta-pricing">
+      <div class="container">
+        <div class="cta-band__content reveal">
+          <h2 id="cta-pricing">Commencez avec un essai gratuit</h2>
+          <p>Aucun engagement. Venez tester avant de vous décider.</p>
+          <div class="cta-band__actions">
+            <a href="inscription.html" class="btn btn--primary btn--large">Réserver mon essai</a>
+            <a href="contact.html" class="btn btn--ghost">Poser une question</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand"><a href="index.html" class="nav__logo"><span class="logo-icon" aria-hidden="true">✦</span><span class="logo-text">IRON <strong>FIST</strong></span></a><p>Club de boxe à Lyon depuis 2008.</p><div class="footer__social"><a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a><a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a></div></div>
+        <nav class="footer__nav" aria-label="Navigation secondaire"><h3>Navigation</h3><ul role="list"><li><a href="index.html">Accueil</a></li><li><a href="club.html">Le Club</a></li><li><a href="coachs.html">Coachs</a></li><li><a href="horaires.html">Horaires</a></li><li><a href="tarifs.html">Tarifs</a></li><li><a href="inscription.html">Inscription</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+        <div class="footer__contact"><h3>Contact</h3><address><p>📍 12 Rue de la Boxe, 69003 Lyon</p><p>📞 <a href="tel:+33472000000">04 72 00 00 00</a></p></address></div>
+        <div class="footer__legal"><h3>Informations</h3><ul role="list"><li><a href="mentions-legales.html">Mentions légales</a></li><li><a href="confidentialite.html">Politique de confidentialité</a></li></ul></div>
+      </div>
+      <div class="footer__bottom"><p>&copy; 2024 Iron Fist Boxing Club – Tous droits réservés</p></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
