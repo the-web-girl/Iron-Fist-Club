@@ -1,0 +1,27 @@
+Proprietary License
+
+Copyright (c) 2026 Angelique Simon by IntA11Y - Solutions
+
+This project is licensed under a proprietary license.
+
+You are allowed to :
+- View the code for reference purposes only
+
+You are NOT allowed to : 
+- Use this code in any project
+- Copy, modify, or distribute this code
+- Use this template commercially without purchasing a license.
+
+To obtain a commercial license, please visit :
+https://inta11ysolutions.gumroad.com/l/dovaw 
+
+
+You are allowed to :
+- Use this template for personal or commercial projects
+- Modify the template
+
+You are NOT allowed to : 
+- Resell, redistribute, or sublicense this template
+- Share the source code publicly (including GitHub)
+
+All rights remain the property of Angelique Simon by IntA11Y - Solutions
